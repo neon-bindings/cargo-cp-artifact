@@ -11,7 +11,7 @@ npm install -g cargo-cp-artifact
 ## Usage
 
 ```
-cargo-cp-artifact --artifact [artifact-kind] [crate-name] [output-file] -- [wrapped-command]
+cargo-cp-artifact --artifact artifact-kind crate-name output-file -- wrapped-command
 ```
 
 `cargo-cp-artifact` accepts a list of crate name and artifact kind to output file mappings and a command to wrap.`cargo-cp-artifact` will read `stdout` of the wrapped command and parse it as [cargo metadata](https://doc.rust-lang.org/cargo/reference/external-tools.html#json-messages). Compiler artifacts that match arguments provided will be copied to the target destination.
@@ -26,13 +26,13 @@ Multiple arguments are allowed to copy multiple build artifacts.
 
 _Alias: `-a`_
 
-Followed by *three* arguments: `[artifact-kind] [crate-name] [output-file]`
+Followed by *three* arguments: `artifact-kind crate-name output-file`
 
 #### `--npm`
 
 _Alias: `-n`_
 
-Followed by *two* arguments: `[artifact-kind] [output-file]`
+Followed by *two* arguments: `artifact-kind output-file`
 
 The crate name will be read from the `npm_package_name` environment variable.
 
