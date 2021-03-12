@@ -21,11 +21,11 @@ function run(argv, env) {
     if (options.cmd === 'cargo' && err.code === 'ENOENT') {
       console.error(`Error: could not find the \`cargo\` executable.
 
-If you don't have Rust on your system, you can install it by running:
+You can find instructions for installing Rust and Cargo at:
 
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    https://www.rust-lang.org/tools/install
 
-See https://www.rust-lang.org for more information.`);
+`);
     } else {
       console.error(err);
     }
