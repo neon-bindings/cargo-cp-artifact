@@ -74,6 +74,7 @@ function processCargoBuildLine(options, copied, line) {
     return;
   }
 
+  // `kind` and `filenames` zip up as key/value pairs
   kinds.forEach((kind, i) => {
     const filename = filenames[i];
     const key = getArtifactName({ artifactType: kind, crateName: name });
