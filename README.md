@@ -1,3 +1,7 @@
+# Archived
+
+This project has been moved to [neon-bindings/neon](https://github.com/neon-bindings/neon/tree/main/pkgs/cargo-cp-artifact).
+
 # cargo-cp-artifact
 
 `cargo-cp-artifact` is a small command line utility for parsing cargo metadata output and copying a compiler artifact to a desired location.
